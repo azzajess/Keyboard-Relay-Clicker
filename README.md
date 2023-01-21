@@ -7,7 +7,7 @@ Goals
 * Holding down a key doesnt spam the relay
 * Ideally a way to open relay on key down and close relay on key up
 * Doesnt have to be reliant on powershell/windows
- * https://github.com/andrewintw/usb-powered-relay ?
+  * https://github.com/andrewintw/usb-powered-relay ?
 
 
 
