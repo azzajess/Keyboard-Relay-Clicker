@@ -13,6 +13,7 @@ Goals
 
 ProtoType v0.10
 First attempt at a keyboard clicker using AHK, powershell and a LCUS-1 USB Relay Module
+Requires LCUS-1 USB relay and ahk 1.1.
 Downsides
 * There is a slight delay and may lagg behind if you type too fast.
 * Holding down a key spams relay on and off
