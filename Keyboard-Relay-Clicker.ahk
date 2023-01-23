@@ -1,4 +1,5 @@
-﻿psScript = 
+;Keyboard Relay Clicker v0.10
+psScript = 
 	(
 		# delcare poweron and off commands
 		[Byte[]] $powerOn  = 0xA0, 0x01, 0x01, 0xA2
