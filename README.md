@@ -1,7 +1,14 @@
 # Keyboard-Relay-Clicker
 Trying to get keyboard presses to activate a relay as a physical clicker.
+Work-In-Progress
 
-Goals
+## Two Versions
+Currently have two versions of this script.
+* Ahk + LCUS-1 USB Relay with powershell (Windows + Linux?)
+* Arduino with Relay board + AHK and SerialSend.exe (Windows) (Recommended)
+
+
+### Goals
 * Relay clicks fast enough to not have an audible delay between key presses
 * All keys activate relay
 * Holding down a key doesnt spam the relay
@@ -9,13 +16,31 @@ Goals
 * Doesnt have to be reliant on powershell/windows
   * https://github.com/andrewintw/usb-powered-relay ?
 
+### Arduino Version
+Requires:
+* Arduino Uno (Or any Arduino (including clones) that plugs into PC)
+* 3 Pin Relay Board (pos, neg, data)
+* AHK
+* SerialSend (Windows only?)
 
+Pros
+* A Lot faster than LCUS-1 USB. Maybe due to higher baudrate?
+* Customisable delay in Arduino code
 
+Cons
+* Not as compact as LCUS-1 Relay. (if using Uno)
+* Probably overkill for what it is.
+ 
+### LCUS-1 USB Relay
+Requires:
+* LCUS-1 USB relay
+* AHK 1.1
+* USBCH341 Windows Driver USB (Also availble for other OS's)
+* PowerShell (Maybe Linux using .sh?)
 
-ProtoType v0.10
-First attempt at a keyboard clicker using AHK, powershell and a LCUS-1 USB Relay Module
+Pros
+* Compact, plugs in anywhere
+* Cheap, only a couple of dollars
 
-Requires LCUS-1 USB relay, ahk 1.1, USBCH341 Windows Driver USB
-
-Downsides
-Check issues section.
+Cons
+* Pretty bad Serial Communication delay. Might be due to low baudrate, which for some reason cannot be changed.
