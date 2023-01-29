@@ -1,0 +1,3 @@
+SerialSend program provided by Ted Burke
+
+https://batchloaf.wordpress.com/serialsend/
